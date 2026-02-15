@@ -1,0 +1,214 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    /* Минимальный: 24px (1.5rem), Предпочтительный: 2vw + 1rem, Максимальный: 40px (2.5rem) */
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: max(0.5rem, 1.4vw);
+}
+
+img {
+    width: clamp(1vw, 5vw, 7vw);
+    height: auto;
+}
+
+section {
+    margin: 0;
+    padding-top: max(5px, 5vw);
+    padding-bottom: max(5px, 8vw);
+}
+
+hr {
+
+    border-radius: 40px;
+    width: clamp(320px, 80vw, 180vw);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    align-items: row;
+    width: 100%;
+}
+
+.pt {
+    padding-top: min(4vw, 1vw);
+}
+
+.pb {
+    padding-bottom: min(4vw, 1vw);
+}
+
+.col-1 {
+    display: flex;
+    align-items: column;
+    width: 50%;
+    height: max(20px, 7vw);
+    padding: max(0.25rem, 3vw);
+    margin-top: min(1vh, 10px);
+
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin-left: auto;
+    margin-right: auto;
+    width: max(16px, 20vw);
+    /* height: auto; */
+}
+
+.header {
+    background-image: radial-gradient(circle, #330537, #720d45, #ac2b43, #d75c33, #eb9612);
+    /* padding: 50px 0 80px 0; */
+    position: relative;
+    z-index: 2;
+
+    .header__span {
+        display: inline-block;
+        color: #eb9612;
+        transition: color 0.75s ease;
+    }
+
+    .header__span:hover {
+        color: #ffffff;
+    }
+
+    .header__content {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .header__min-block {
+        width: min(90%, 1200px);
+        height: clamp(100px,17vw,25vw);
+        background-color: rgba(221, 160, 221, 0.26);
+        color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 196, 237);
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    height: 100px;
+    backdrop-filter: blur(55px);
+
+    mask-image: linear-gradient(to bottom,
+            transparent,
+            black 40%,
+            black 60%,
+            transparent);
+    pointer-events: none;
+}
+
+.header h1 {
+    padding: 30px 0;
+}
+
+.header hr {
+    border: 3px solid #eb9612;
+}
+
+.header p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__min-block p {
+    width: 100%;
+}
+
+.title-span {
+    color: rgba(250, 235, 215, 0);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.liquid {
+    font-size: clamp(0.4rem, 1vw, 1.8vw);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subtitle {
+    color: white;
+    font-size: clamp(0.5rem, 1vw, 3rem);
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.clamp {
+    background-image: linear-gradient(to right top, #330537, #720d45, #ac2b43, #d75c33, #eb9612);
+    width: 100%;
+    height: max(1000px, 80%);
+    /* padding: 50px 0 80px 0; */
+
+    .wrapper img {
+        padding-bottom: 40px;
+    }
+
+
+
+    
+
+}
+
+.clamp__block {
+        width: clamp(8rem, 20vw, 40vw);
+        height: clamp(4rem, 12vw, 24vw);
+        background-color: rgba(221, 160, 221, 0.26);
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 196, 237);
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+.clamp hr {
+    border: 3px solid rgba(49, 2, 41, 0.715);
+}

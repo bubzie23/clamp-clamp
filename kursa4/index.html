@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo campl min max</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <section class="header">
+        <h1>Сделал <span class="header__span">Беловол Андрей</span></h1>
+        <p class="subtitle">Чтобы увидеть эффект нажмите F12 и потяните окно разработчика влево</p>
+        <hr>
+        <div class="container header__content">
+            <h1>Параметры <span class="title-span">min() / max()</span></h1>
+            <p>Комбинация min/max для адаптивной разметки</p>
+            <img class="clamp__img pt pb" src="finger.png" alt="finger">
+            <div class="header__min-block">
+                <p>Эти параметры используются для адаптивной разметки блоков и расстояния между блоками,<br>
+                    чтобы они не "уплыли" когда сайт, который делался на компьютере, запустят на телефоне.
+                </p>
+            </div>
+        </div>
+        <p class="justify-content-center pt pb">Так же могут расстягиваться иконки</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <img class="icon" src="mobile.svg" alt="mobile">
+                </div>
+                <div class="col-1">
+                    <img class="icon" src="tablet.svg" alt="tablet">
+                </div>
+                <div class="col-1">
+                    <img class="icon" src="pc.svg" alt="pc">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clamp">
+        <hr>
+        <h1 class="title">Параметр <span class="title-span">clamp</span></h1>
+        <div class="wrapper">
+            <img class="clamp__img" src="Bootstrap_logo.svg" alt="bootstrap-ico">
+        </div>
+        <div class="clamp__block">
+            <p class="liquid">пример блока с параметрами: <br> width: clamp(10rem,20vw,40vw);
+                height: clamp(6rem,12vw,24vw);</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
